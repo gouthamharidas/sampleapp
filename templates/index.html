@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CAREER LAUNCH</title>
+  <style>
+
+.header a {
+        font-size: 1.5em; /* Increase font size for the paragraph */
+        color: #f6ecec; /* Change the text color to match the background */
+        text-decoration: none; /* Remove underline from the link */
+        background-color: transparent; /* Change background color of the link */
+        border: none; /* Remove the border of the link */
+        font-weight: bold; /* Make the link text bold */
+        transition: 0.2s; /* Add transition effect to the link */
+        margin-top: 10px;
+        margin-left: 30px; /* add margin to the left of each button */
+
+    }
+
+    /* Add styling for the link when hovered */
+    .header a:hover {
+        color: #c56d01fc; /* Change the text color to dark blue when hovered */
+    }
+
+  /* Add styling for the header */
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 35px;
+    z-index: 99;
+}
+
+
+
+.logo {
+  margin-top: 0.75%; /* Add margin to the top of the heading */
+        width: 50px; /* set a width for the logo */
+        height: 50px; /* set a height for the logo */
+        position: absolute; /* Position the logo in the top left corner */
+        top: 0;
+        left: 230px;
+    }
+
+.bg-effect {
+position: absolute;
+right: 0px;
+top: 0;
+height: 100%;
+width: 30%;
+background: radial-gradient(circle, rgba(152, 151, 151, 0.3) 0%, rgba(255,255,255,0) 70%);
+}
+.bg-effect-top-left {
+position: absolute;
+left: 0;
+top: 0;
+height: 10%;
+width: 25%;
+background: radial-gradient(circle, rgba(115, 60, 225, 0.3) 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+
+
+    body {
+      background-color: #000235;
+      display: flex;
+      justify-content: center;
+    }
+
+
+
+
+
+    .header-background {
+position: absolute;
+width: 1440px;
+height: 250px;
+left: 32px;
+top: 53cm;
+background-color: rgba(108, 197, 232, 0.8);
+}
+
+.header-background-text {
+position: absolute;
+width: 1440px;
+height: 288px;
+left: 37px;
+top: 50cm;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 150%;
+letter-spacing: -0.019em;
+color: rgb(229, 232, 238); /* change color to white */
+white-space: pre-line;
+}
+
+    h1 {
+  font-size: 20px;
+  text-align: left;
+  margin-top: 10px;
+  color: white;
+  margin-left: 30px;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+p {
+font-size: 50px;
+font-weight: bold;
+text-align: left;
+margin-top: 100px;
+color: white;
+margin-left: 20px;
+position: absolute;
+top: 100px;
+left: 20px;
+}
+
+p1 {
+font-size: 18px;
+text-align: left;
+margin-top: 200px;
+color: white;
+margin-left: 20px;
+position: absolute;
+top: 200px;
+left: 30px;
+}
+
+p2 {
+  font-size: 18px;
+  text-align: left;
+  color: white;
+  position: absolute;
+  font-weight: bold;
+  margin-top: 220px;
+  top: 220px;
+  left: 50px;
+}
+
+p3 {
+font-size: 30px;
+text-align: right;
+margin-top: 350px;
+color: white;
+margin-right: 50px;
+position: absolute;
+top: 350px;
+right: 50px;
+}
+
+p4 {
+font-size: 30px;
+text-align: left;
+margin-top: 590px;
+color: white;
+margin-left: 50px;
+position: absolute;
+top: 630px;
+left: 50px;
+}
+
+p5 {
+font-size: 30px;
+text-align: right;
+margin-top: 850px;
+color: white;
+margin-right: 50px;
+position: absolute;
+top: 850px;
+right: 50px;
+}
+
+
+    /* Add styling for the paragraph */
+    p10 {
+        font-size: 1.5em; /* Increase font size for the paragraph */
+        margin-bottom: 10%; /* Add margin to the bottom of the paragraph */
+        color: #ccb5b5; /* Set text color to dark grey */
+    }
+img {
+  height: 400px;
+  margin-top: 3cm;
+  position: absolute;
+  margin-right: 50px;
+  right: 50px;
+}
+
+.img1 {
+  height: 450px;
+  margin-top: 16cm;
+  position: absolute;
+  margin-left: 20px;
+  left: 30px;
+}
+
+.img2 {
+  height: 450px;
+  width: auto;
+  margin-top: 15cm;
+  position: absolute;
+  margin-right: 20px;
+  right: 20px;
+  top: 15cm;
+}
+
+.img3 {
+  height: 300px;
+  width: auto;
+  margin-top: 22cm;
+  position: absolute;
+  margin-left: 30px;
+  left: 50px;
+  top: 21cm;
+}
+
+button {
+      background-color: rgb(0, 119, 255);
+      color: #000235;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      position: absolute;
+      top: 490px;
+      left: 50px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    button:hover {
+      background-color: #096cb3;
+      color: white;
+      cursor: pointer;
+    }
+
+    button + button {
+  background-color: white;
+  color: #000235;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  position: absolute;
+  top: 490px;
+  left: 190px;
+  transition: all 0.3s ease-in-out;
+}
+
+button + button:hover {
+  background-color: #096cb3;
+  color: white;
+  cursor: pointer;
+}
+
+
+.highlight {
+color: rgb(238, 255, 0); /* set color to blue */
+}
+
+
+
+
+
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <img class="logo" src="{{url_for('static', filename='buildin/logo10.png')}}"  >
+    <h1>CAREER LAUNCH</h1>
+  </header>
+
+    <div class="bg-effect"></div>
+    <div class="bg-effect-top-left"></div>
+    <div class="header-background"></div>
+    
+
+    <p10 class="header-background-text">
+        
+        
+    
+        
+    
+        <u>HOW IT WORKS?</u> 
+        AI generates resumes, cover letters, and interview questions by using natural language processing (NLP) and machine learning algorithms.
+        The AI system analyzes various input data, such as job descriptions, personal information, and writing styles, to generate personalized documents that align with the user's needs and preferences.
+        The generated outputs are based on patterns and insights derived from large datasets of successful job applications, making them highly relevant and effective.
+        </p10>
+
+
+    <h1>CAREER LAUNCH</h1>
+    <p>Launch<br>
+       your career with careerlaunch <br>
+       get your desired job</p>
+    <br><br>
+    <p1>Unlock the power of AI to build and land the perfect career.</p1>
+    <p2 id="text"></p2>
+    <br><br>
+    <p3><strong>Quickly build a resume.</strong><br>
+        <br>
+        Career launch uses openAI technology to help you quickly<br>
+        and easily build a resume, tailored to <br>
+        the job you want</p3>
+     <br><br>
+     <p4><strong>Quickly build a Cover Letter.</strong><br>
+        <br>
+        Career launch uses openAI technology to help you <br>
+        quickly and easily build a cover letter, tailored to <br>
+        the job you want</p4>
+        <br><br>
+        <p5><strong>ACE YOUR INTERVIEW.</strong><br>
+            <br>
+            With Career launch, you can prepare for your <br>
+            interview with confidence. Access plenty of<br>
+            interview questions, tailored to your desired job.</p5>
+            <br><br>
+   
+              
+
+    <button>GET STARTED</button>
+    <button + button>VIEW DEMO</button + button>
+    <img src="{{url_for('static', filename='buildin/Other 07.png')}}">
+    <img class="img1" src="{{url_for('static', filename='buildin/40.png')}}">
+    <img class="img2" src="{{url_for('static', filename='buildin/41.png')}}">
+    <img class="img3" src="{{url_for('static', filename='buildin/img5.jpeg')}}">
+
+
+
+    <div class="header">
+      <a href="{{ url_for('home') }}">
+          <img src="{{url_for('static', filename='buildin/logo10.png')}}" class="logo">
+      </a>
+
+    <a href="{{ url_for('analysis') }}">Analysis</a>
+    <a href="{{ url_for('generate') }}">Cover Letter</a>
+    <a href="{{ url_for('services') }}">Questions</a>
+    <a href="{{ url_for('products') }}">Resume</a>
+    <a href="{{ url_for('signup') }}">Sign Up</a>
+</div>
+
+<script>
+const texts = [
+"Get Professional and personalised <span class='highlight'>RESUME</span>.",
+"Get Professional and personalised <span class='highlight'>COVER LETTER</span>.",
+"Get Professional and personalised <span class='highlight'>INTERVIEW QUESTIONS</span>."
+];  let i = 0;
+  setInterval(() => {
+    document.getElementById("text").innerHTML = texts[i];
+    i = (i + 1) % texts.length;
+  }, 2000);
+</script>
